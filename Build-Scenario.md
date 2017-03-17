@@ -1,9 +1,9 @@
-#Creating a custom phishing scenario
+# Creating a custom phishing scenario
 -----------------------------------
 
 For specific target-oriented attacks, custom scenarios may be necessary.
 
-###Creating a phishing scenario is easy and consists of two steps:
+### Creating a phishing scenario is easy and consists of two steps:
 
 1) Create the config.ini
   A config.ini file lies in template's root directory and its contents can be divided into two sections:
@@ -15,7 +15,7 @@ For specific target-oriented attacks, custom scenarios may be necessary.
 
 ii) context: This section is optional and holds user-defined variables that may be later injected to the template.
 
-####Example
+#### Example
 -------
 
 Here`s an example of a config.ini file:
@@ -59,12 +59,12 @@ At the time of writing, the main process passes the following data:
 
   In case of naming conflicts, the variables from the configuration file will override those coming from the beacon frames.
 
-###Logging credentials
+### Logging credentials
 -------------------
 
 In order for wifiphisher to know which credentials to log, the values of the 'name' HTML attributes need to be prefixed with the 'wfphshr' string. During POST requests, wifiphisher will log all variables that are prefixed with this string.
 
-####Example
+#### Example
 -------
 
 <b>Here's a snippet from a template (index.html):</b>
